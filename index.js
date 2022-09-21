@@ -1,0 +1,18 @@
+$(document).ready(function(){
+    $('.collapse_plush').click(function(){
+        $('.collapse_minus').css('display','block');
+        $('.collapse_plush').css('display','none');
+    });
+    $('.collapse_minus').click(function(){
+        $('.collapse_plush').css('display','block');
+        $('.collapse_minus').css('display','none');
+    });
+    $('.menu_button').click(function(){
+        $('.close_button').css('display','block');
+        $('.menu_button').css('display','none');
+    });
+    $('.close_button').click(function(){
+        $('.menu_button').css('display','block');
+        $('.close_button').css('display','none');
+    });
+});

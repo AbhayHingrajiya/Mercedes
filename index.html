@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="index.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <script src="index.js"></script>
+       <title>Mercedes</title>
+   </head>
+   <body>
+
+    <!-- ======================================
+            Start Header Area
+    ====================================== -->
+
+    <div class="container-fluid header">
+        <a href="index.html" style="text-decoration: none;"><img src="images/logo.png" alt="logo" style="padding-top:5px; padding-bottom:5px;"><span style="color: white; font-size: xx-large; padding-left: 10px;"><b>MERCEDES</b></span></a>
+        <button class="navbar-toggler menu_button" type="button" data-toggle="collapse" data-target="#navbar"><span class="material-icons">menu</span></button>
+        <button class="navbar-toggler close_button" type="button" data-toggle="collapse" data-target="#navbar"><span class="material-icons">close</span></button>
+        <nav class="navbar navbar-expand-md" style="float: right;">
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Models
+                            <button class="mobile_view mobile_view_button collapse_plush" type="button" data-toggle="collapse" data-target="#sub_menu">+</button>
+                            <button class="mobile_view mobile_view_button collapse_minus" type="button" data-toggle="collapse" data-target="#sub_menu" style="display: none; padding-left: 15px;">-</button>
+                        </a>
+                        <ul class="collapse mobile_view" id="sub_menu" style="list-style: none;">
+                            <li><a href="#" class="nav-link">Abhay</a></li>
+                            <li><a href="#" class="nav-link">Abhay</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- <div class="menu">
+            <ul style="list-style: none;">
+                <li>Abhay</li>
+                <li>Abhay</li>
+            </ul>
+        </div> -->
+    </div>
+
+    <!-- ======================================
+            End Header Area
+    ====================================== -->
+    
+    <div class="carousel carousel-fade slide" data-ride="carousel" data-pause="false;" data-interval="5000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/AMG_GT.png" alt="AMG_GT" width="561px" height="270px">
+                <div class="slider_info">
+                    <h1>Mercedes-Benz AMG GT Variants</h1>
+                    <ul>
+                        <li>GT S DC/T</li>
+                    </ul>
+                    <div class="slider_info_contact_us">
+                        <span class="span_1">CONTACT US</span><span class="span_2">></span>
+                        <a href="#" class="slider_contact"><b> CONTACT US </b></a>
+                    </div>
+                </div>
+                <div class="slider_social">
+                    <a href="https://www.facebook.com/MercedesBenz/" style="background-color: rgb(66, 103, 178); padding: 4px 13px; left: 15%;"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/mercedesbenzind/?hl=en" style="background-color: rgb(209, 30, 75); padding: 4px 10px; left: 18%"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/MercedesBenz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" style="background-color: rgb(29, 161, 242); padding: 4px 9px; left: 21%"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/mercedes-benz_ag" style="background-color: rgb(10, 102, 194); padding: 4px 10px; left: 24%"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/SL.png" alt="SL" width="561px" height="270px">
+                <div class="slider_info">
+                    <h1>Mercedes-Benz SL Class Variants</h1>
+                    <ul>
+                        <li>Mercedes-Benz SL-Class SL 350</li>
+                        <li>Mercedes-Benz SL-Class SL 600</li>
+                        <li>Mercedes-Benz SL-Class SL 63 AMG</li>
+                    </ul>
+                    <div class="slider_info_contact_us">
+                        <span class="span_1">CONTACT US</span><span class="span_2">></span>
+                        <a href="#" class="slider_contact"><b> CONTACT US </b></a>
+                    </div>
+                </div>
+                <div class="slider_social">
+                    <a href="https://www.facebook.com/MercedesBenz/" style="background-color: rgb(66, 103, 178); padding: 4px 13px; left: 15%;"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/mercedesbenzind/?hl=en" style="background-color: rgb(209, 30, 75); padding: 4px 10px; left: 18%"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/MercedesBenz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" style="background-color: rgb(29, 161, 242); padding: 4px 9px; left: 21%"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/mercedes-benz_ag" style="background-color: rgb(10, 102, 194); padding: 4px 10px; left: 24%"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/E.png" alt="E" width="561px" height="270px">
+                <div class="slider_info">
+                    <h1>Mercedes-Benz E Class Variants</h1>
+                    <ul>
+                        <li>E250 CDI Avantgarde A/T</li>
+                        <li>E63 AMG DC/T</li>
+                    </ul>
+                    <div class="slider_info_contact_us">
+                        <span class="span_1">CONTACT US</span><span class="span_2">></span>
+                        <a href="#" class="slider_contact"><b> CONTACT US </b></a>
+                    </div>
+                </div>
+                <div class="slider_social">
+                    <a href="https://www.facebook.com/MercedesBenz/" style="background-color: rgb(66, 103, 178); padding: 4px 13px; left: 15%;"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/mercedesbenzind/?hl=en" style="background-color: rgb(209, 30, 75); padding: 4px 10px; left: 18%"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/MercedesBenz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" style="background-color: rgb(29, 161, 242); padding: 4px 9px; left: 21%"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/mercedes-benz_ag" style="background-color: rgb(10, 102, 194); padding: 4px 10px; left: 24%"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/GLA.png" alt="GLA" width="561px" height="270px">
+                <div class="slider_info">
+                    <h1>Mercedes-Benz GLA Class Variants</h1>
+                    <ul>
+                        <li>GLA45 AMG DC/T</li>
+                        <li>GLA220 CDI AMG Sport 4Matic DC/T</li>
+                        <li>GLA250 Edition I 4Matic DC/T</li>
+                    </ul>
+                    <div class="slider_info_contact_us">
+                        <span class="span_1">CONTACT US</span><span class="span_2">></span>
+                        <a href="#" class="slider_contact"><b> CONTACT US </b></a>
+                    </div>
+                </div>
+                <div class="slider_social">
+                    <a href="https://www.facebook.com/MercedesBenz/" style="background-color: rgb(66, 103, 178); padding: 4px 13px; left: 15%;"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/mercedesbenzind/?hl=en" style="background-color: rgb(209, 30, 75); padding: 4px 10px; left: 18%"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/MercedesBenz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" style="background-color: rgb(29, 161, 242); padding: 4px 9px; left: 21%"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/mercedes-benz_ag" style="background-color: rgb(10, 102, 194); padding: 4px 10px; left: 24%"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/SLK.png" alt="SLK" width="561px" height="270px">
+                <div class="slider_info">
+                    <h1>Mercedes-Benz SLK Class Variants</h1>
+                    <ul>
+                        <li>SLK200 A/T</li>
+                        <li>SLK250 A/T</li>
+                        <li>SLK350 A/T</li>
+                        <li>SLK55 AMG A/T</li>
+                    </ul>
+                    <div class="slider_info_contact_us">
+                        <span class="span_1">CONTACT US</span><span class="span_2">></span>
+                        <a href="#" class="slider_contact"><b> CONTACT US </b></a>
+                    </div>
+                </div>
+                <div class="slider_social">
+                    <a href="https://www.facebook.com/MercedesBenz/" style="background-color: rgb(66, 103, 178); padding: 4px 13px; left: 15%;"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/mercedesbenzind/?hl=en" style="background-color: rgb(209, 30, 75); padding: 4px 10px; left: 18%"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/MercedesBenz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" style="background-color: rgb(29, 161, 242); padding: 4px 9px; left: 21%"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/mercedes-benz_ag" style="background-color: rgb(10, 102, 194); padding: 4px 10px; left: 24%"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
