@@ -65,6 +65,12 @@ nav{
     .header{
         padding-bottom: 16px;
     }
+    .navbar{
+        z-index: 2;
+    }
+    .carousel{
+        z-index: 1;
+    }
 }
 @media only screen and (min-width: 768px) {
     .nav-item .active::before{
@@ -113,8 +119,8 @@ nav{
 .slider_info{
     position: absolute;
     color: white;
-    width: 50%;
-    top: 45%;
+    width: 70%;
+    top: 35%;
     left: 15%;
 }
 .slider_info h1{
@@ -139,7 +145,7 @@ nav{
     left: 200%;
     cursor: pointer;
 }
-.slider_info_contact_us a{
+.slider_contact{
     position: absolute;
     left: 0%;
     width: 0%;
@@ -171,6 +177,17 @@ nav{
     background-color: white;
     color: black;
 }
+.carousel-indicators{
+    right: 57% !important;
+    top: 85%;
+    cursor: pointer;
+    margin: 0px 2px !important;
+    bottom: 14% !important;
+}
+.carousel-indicators .active{
+    height: 27px;
+    width: 3px;
+}
 .slider_social a{
     position: absolute;
     bottom: 0%;
@@ -179,6 +196,7 @@ nav{
     font-size: larger;
     cursor: pointer;
     transition: 0.5s ease-out;
+    margin-right: 2px;
 }
 .slider_social a:hover{
     color: white;
@@ -196,7 +214,58 @@ nav{
     left: 0%;
     transition: 1s ease-out;
 }
+@media only screen and (max-width: 1000px) {
+    .slider_info{
+        top: 20%;
+    }
+    .carousel-indicators{
+        top: 80%;
+        bottom: 19%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .slider_info ul, .slider_info a{
+        font-size: medium !important;
+    }
+    .carousel-item h1{
+        font-size: x-large !important;
+        max-height: 30px;
+    }
+    .carousel-item img{
+        height: 500px;
+    }
+    .slider_info ul{
+        margin-left: -150%;
+    }
+    .slider_info{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .carousel-item h1{
+        font-size: larger !important;
+        max-height: 20px;
+    }
+    .carousel-indicators{
+        right: 27% !important;
+    }
+}
 
 /* ======================================
         End Slider Area
 ====================================== */
+
+.about_us{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(59, 100, 69);
+}
+.about_us::after{
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 2px;
+    margin-top: 40px;
+    left: 47.5%;
+    background-color: black;
+}
