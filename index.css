@@ -269,3 +269,58 @@ nav{
     left: 47.5%;
     background-color: black;
 }
+.about_us_read_more{
+    position: relative;
+    margin-top: 40px;
+    width: 148px;
+    height: 44px;
+}
+.about_us_read_more .span_1{
+    border: 1px solid rgb(59, 100, 69);
+    color: rgb(59, 100, 69);
+    padding: 10px 20px 10px 15px;
+}
+.about_us_read_more .span_2{
+    background-color: rgb(59, 100, 69);
+    color: white;
+    padding: 11px;
+}
+.about_us_read_more .read_more{
+    position: absolute;
+    top: -10px;
+    left: 100%;
+    text-decoration: none;
+    height: 43px;
+    width: 0%;
+    overflow: hidden;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgb(59, 100, 69);
+    color: white;
+    text-align: center;
+    transition: 0.3s ease-out;
+}
+.about_us_read_more:hover .read_more{
+    left: 0%;
+    width: 99%;
+}
+@media only screen and (max-width: 955px) {
+    .about_us_photo_1{
+        display: none;
+    }
+    .about_us_photo_2{
+        height: 600px;
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .about_us_photos{
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 0px !important;
+    }
+    .about_us_photo_2{
+        height: 500px;
+        width: 300px;
+    }
+}
