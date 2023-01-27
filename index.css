@@ -255,10 +255,14 @@ nav{
         End Slider Area
 ====================================== */
 
+/* ======================================
+        Start About Us Area
+====================================== */
+
 .about_us{
     text-align: center;
     margin-top: 40px;
-    color: rgb(59, 100, 69);
+    color: rgb(60, 123, 196);
 }
 .about_us::after{
     content: '';
@@ -276,12 +280,12 @@ nav{
     height: 44px;
 }
 .about_us_read_more .span_1{
-    border: 1px solid rgb(59, 100, 69);
-    color: rgb(59, 100, 69);
+    border: 1px solid rgb(60, 123, 196);
+    color: rgb(60, 123, 196);
     padding: 10px 20px 10px 15px;
 }
 .about_us_read_more .span_2{
-    background-color: rgb(59, 100, 69);
+    background-color: rgb(60, 123, 196);
     color: white;
     padding: 11px;
 }
@@ -295,7 +299,7 @@ nav{
     overflow: hidden;
     padding-top: 5%;
     padding-bottom: 5%;
-    background-color: rgb(59, 100, 69);
+    background-color: rgb(60, 123, 196);
     color: white;
     text-align: center;
     transition: 0.3s ease-out;
@@ -322,5 +326,134 @@ nav{
     .about_us_photo_2{
         height: 500px;
         width: 300px;
+    }
+}
+
+/* ======================================
+        End About Us Area
+====================================== */
+
+.made_image{
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+.made_h3{
+    position: absolute;
+    left: 37%;
+    top: 50px;
+    color: white;
+}
+.made_h3::before{
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 205px;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.manufacturing{
+    background-color: transparent;
+    width: 310px;
+    position: absolute;
+    color: white;
+    padding: 5px 3px;
+    transition: .8s ease;
+}
+.manufacturing:hover .manufacturing_images{
+    opacity: 1;
+}
+.manufacturing img{
+    width:310px;
+    height:168px;
+    opacity:0;
+    position: absolute;
+    transition: .5s ease-out;
+}
+@media only screen and (max-width: 1240px) {
+    .manu_1240px{
+        display: none;
+    }
+    .manufacturing img{
+        width:250px;
+        height: 140px;
+    }
+    .manufacturing{
+        font-size: smaller;
+        width: 250px;
+    }
+    .manufacturing h4{
+        font-size: medium;
+    }
+}
+.mobile_view_manufacturing img{
+    width: 250px;
+    height: 140px;
+}
+.mobile_view_manufacturing{
+    position: absolute;
+    top: 20%;
+    color: white;
+}
+.mobile_view_manufacturing h4{
+    left: 3%;
+    display: none;
+    padding: 2% 3%;
+    border-bottom: 2px dotted white;
+    margin-bottom: 0px;
+    transition: .5s ease-out;
+}
+.mobile_view_manufacturing h4:hover {
+    background-color: rgb(60, 123, 196);
+}
+#sedans_sub, #crossovers_sub, #coupes_sub, #convertible_sub, #buses_sub, #trucks_sub, #racing_sub{
+    display: none;
+    transition: .8s ease-out;
+}
+@media only screen and (max-width:880px) {
+    .manufacturing{
+        display: none;
+    }
+    .made_h3{
+        font-size: large;
+    }
+    .made_h3::before{
+        width: 110px;
+        top: -10px;
+        left: -10%;
+    }
+    .mobile_view_manufacturing h4,.manufacturing_front{
+        display: block;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .made_h3{
+        top: 2px;
+    }
+    .manufacturing_spam{
+        display: none;
+    }
+    .mobile_view_manufacturing h4{
+        font-size: large;
+    }
+}
+@media only screen and (max-width: 585px){
+    .manufacturing_spam_1{
+        display: none;
+    }
+    .mobile_view_manufacturing h4{
+        font-size: medium;
+        padding: 1% 3%;
+        font-weight: lighter;
+    }
+    .mobile_view_manufacturing{
+        top: 18%;
+    }
+    .made_h3::before{
+        top: -20px;
+    }
+    .made_h3{
+        left: 25%;
     }
 }
