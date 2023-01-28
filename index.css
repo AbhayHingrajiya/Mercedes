@@ -271,7 +271,7 @@ nav{
     height: 2px;
     margin-top: 40px;
     left: 47.5%;
-    background-color: black;
+    background-color: rgb(8, 92, 201);
 }
 .about_us_read_more{
     position: relative;
@@ -333,6 +333,10 @@ nav{
         End About Us Area
 ====================================== */
 
+/* ======================================
+        Start Manufacturing Area
+====================================== */
+
 .made_image{
     width: 100%;
     height: auto;
@@ -371,22 +375,6 @@ nav{
     position: absolute;
     transition: .5s ease-out;
 }
-@media only screen and (max-width: 1240px) {
-    .manu_1240px{
-        display: none;
-    }
-    .manufacturing img{
-        width:250px;
-        height: 140px;
-    }
-    .manufacturing{
-        font-size: smaller;
-        width: 250px;
-    }
-    .manufacturing h4{
-        font-size: medium;
-    }
-}
 .mobile_view_manufacturing img{
     width: 250px;
     height: 140px;
@@ -410,6 +398,22 @@ nav{
 #sedans_sub, #crossovers_sub, #coupes_sub, #convertible_sub, #buses_sub, #trucks_sub, #racing_sub{
     display: none;
     transition: .8s ease-out;
+}
+@media only screen and (max-width: 1240px) {
+    .manu_1240px{
+        display: none;
+    }
+    .manufacturing img{
+        width:250px;
+        height: 140px;
+    }
+    .manufacturing{
+        font-size: smaller;
+        width: 250px;
+    }
+    .manufacturing h4{
+        font-size: medium;
+    }
 }
 @media only screen and (max-width:880px) {
     .manufacturing{
@@ -456,4 +460,86 @@ nav{
     .made_h3{
         left: 25%;
     }
+}
+
+/* ======================================
+        End Manufacturing Area
+====================================== */
+
+.inquiry{
+    margin-top: 30px;
+}
+.inquiry1{
+    margin: 10px 5%;
+}
+.inquiryImage{
+    max-width: 100%;
+}
+.inquiry2{
+    margin-left: 4%;
+}
+.inquiry2 h3{
+    margin-top: 20px;
+    color:  rgb(60, 123, 196);
+}
+.inquiry2 h3::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(8, 92, 201);
+    height: 2px;
+    width: 160px;
+    margin-top: 35px;
+}
+.inquiry2 input,.inquiry2 select,.inquirySubmit{
+    width: 100%;
+    max-width: 500px;
+    padding: 5px 20px;
+    border: 1px solid rgb(182, 168, 168);
+    border-radius: 20px;
+    margin: 2px;
+    transition: .5s ease-out;
+}
+.inquiry2 input:hover, .inquiry2 select:hover{
+    cursor: pointer;
+    border: 1px solid rgb(8, 92, 201);
+    box-shadow: 5px rgb(8, 92, 201);
+}
+.inquiry2 h6{
+    opacity: 0.6;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.inquiry2 form{
+    margin-top: 10%;
+}
+.inquirySubmit{
+    margin-top: 40px !important;
+    max-width: 200px !important;
+    padding: 8px !important;
+    background-color: rgb(8, 92, 201);
+    color: white;
+    font-weight: 700;
+    transition: .5s ease-in-out;
+    position: relative;
+}
+@keyframes inquirySubmit{
+    from{width:0px; left:100px;}
+    to{width:140px; left:29px;}
+}
+.inquirySubmit:hover::before{
+    content: 'Submit';
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    /* width: 140px; */
+    height: 40px;
+    padding-top: 8px;
+    top: -.5px;
+    /* left: 29px; */
+    background-color: black;
+    animation: inquirySubmit .5s forwards;
+    overflow: hidden;
+}
+.error{
+    color: red;
 }

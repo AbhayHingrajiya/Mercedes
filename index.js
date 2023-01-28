@@ -71,4 +71,35 @@ $(document).ready(function(){
         $('#racing_sub').css('display','none');
         $('.manufacturing_front').css('display','block');
     });
+    $.validator.addMethod("valueNotEquals", function(value, element, arg){
+        return arg !== value;
+    });
+    $('#form').validate({
+        rules :{
+            name : 'required',
+            email : {
+                required : true,
+                email : true
+            },
+            selectInput : {
+                required : true,
+                valueNotEquals : 'none'
+            }
+        },
+        massages :{
+            name : 'This Field is required',
+            email : {
+                required : 'This Field is required',
+                email : 'Enter Valid Email Address'
+            },
+            selectInput : {
+                required : 'Select one option',
+                valueNotEquals : 'Select one option'
+            }
+        },
+        submitHandler : function(){
+            alert('We have Your Details');
+            alert('We will contact you very soon');
+        }
+    });
 });
