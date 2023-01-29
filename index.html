@@ -11,6 +11,7 @@
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
        <script src="index.js"></script>
        <title>Mercedes</title>
    </head>
@@ -219,10 +220,10 @@
             Start Manufacturing Area
     ====================================== -->
     
-    <div style="position: relative; background-color: black; margin-top: 30px;">
+    <div style="position: relative; background-color: black; margin-top: 30px; overflow: hidden;">
         <img src="images/manufacturing_photo.png" alt="manufacturing_photo" class="made_image">
         <h3 class="made_h3">What We Manufacturing</h3>
-        <div class="manufacturing" style="top: 23%; left: 15%;">
+        <div class="manufacturing left_15" style="top: 23%;">
             <img src="images/manufacturing_1.jpg" alt="manufacturing_1" class="manufacturing_images">
             <h4><b>Sedans & Wagons</b></h4>
             <ul style="margin-left: 50px;">
@@ -233,7 +234,7 @@
                 <li class="manu_1240px">EQS Sedan</li>
             </ul>
         </div>
-        <div class="manufacturing" style="top: 23%; right: 15%;">
+        <div class="manufacturing right_15" style="top: 23%;">
             <img src="images/suv.jpg" alt="suv" class="manufacturing_images">
             <h4><b>Crossovers/SUVs</b></h4>
             <ul style="margin-left: 50px;">
@@ -244,7 +245,7 @@
                 <li class="manu_1240px">EQS SUV</li>
             </ul>
         </div>
-        <div class="manufacturing" style="top: 49%; left: 5%;">
+        <div class="manufacturing left_5" style="top: 49%;">
             <img src="images/coupes.jpg" alt="coupes" class="manufacturing_images">
             <h4><b>Coupes</b></h4>
             <ul style="margin-left: 50px;">
@@ -255,7 +256,7 @@
                 <li class="manu_1240px">CLS Coupe</li>
             </ul>
         </div>
-        <div class="manufacturing" style="top: 49%; left: 37%;">
+        <div class="manufacturing left_37" style="top: 49%; overflow: hidden;">
             <img src="images/cabriolet.jpg" alt="cabriolet" class="manufacturing_images">
             <h4><b>Convertible & Roadsters</b></h4>
             <ul style="margin-left: 50px;">
@@ -264,7 +265,7 @@
                 <li>E-CLASS Cabriolet</li>
             </ul>
         </div>
-        <div class="manufacturing" style="top: 49%; right: 5%;">
+        <div class="manufacturing right_5" style="top: 49%; overflow:hidden;">
             <img src="images/bus.jpg" alt="bus" class="manufacturing_images">
             <h4><b>Buses</b></h4>
             <ul style="margin-left: 50px;">
@@ -275,7 +276,7 @@
                 <li class="manu_1240px">The Sprinter minibuses</li>
             </ul>
         </div>
-        <div class="manufacturing" style="bottom: 6%; left: 15%;">
+        <div class="manufacturing bottom_6" style="left:15%">
             <img src="images/trucks.jpg" alt="trucks" class="manufacturing_images">
             <h4><b>Trucks</b></h4>
             <ul style="margin-left: 50px;">
@@ -286,7 +287,7 @@
                 <li class="manu_1240px">Actros in Distribution Haulage</li>
             </ul>
         </div>
-        <div class="manufacturing" style="bottom: 6%; right: 15%;">
+        <div class="manufacturing bottom_6" style="right: 15%;">
             <img src="images/racing_car.jpg" alt="racing_car" class="manufacturing_images">
             <h4><b>Racing Cars</b></h4>
             <ul style="margin-left: 50px;">
@@ -298,7 +299,7 @@
             </ul>
         </div>
         <div class="mobile_view_manufacturing row" style="min-width: 100%;">
-            <div class="col-sm-6">
+            <div class="col-sm-6 left_0">
                 <h4 id="sedans"><b>Sedans & Wagons</b></h4>
                 <h4 id="crossovers"><b>Crossovers/SUVs</b></h4>
                 <h4 id="coupes"><b>Coupes</b></h4>
@@ -309,7 +310,7 @@
             </div>
             <div class="col-sm-1 manufacturing_spam"></div>
             <div class="col-sm-5 manufacturing_spam_1">
-                <img src="images/manufacturing_1.jpg" alt="manufacturing_1" class="manufacturing_front" style="display: none;">
+                <img src="images/logo1.jpeg" alt="logo1" class="manufacturing_front">
                 <div id="sedans_sub">
                     <ul style="margin-left: 50px;">
                         <li>A-Class Sedan</li>
@@ -383,10 +384,14 @@
     <!-- ======================================
             End Manufacturing Area
     ====================================== -->
+  
+    <!-- ======================================
+            Start Inquiry Area
+    ====================================== -->
     
     <div class="inquiry row" style="max-width: 100%;">
         <div class="col-lg-6 inquiry1">
-            <img src="images/manufacturing_photo.png" alt="inquiry" class="inquiryImage">
+            <img src="images/coll_car1.jpeg" alt="inquiry" class="inquiryImage">
         </div>
         <div class="col-lg-4 inquiry2">
             <h3><b>GENERATE ENQUIRY</b></h3>
@@ -410,6 +415,30 @@
                 </div>
                 <button type="submit" value="submit" class="inquirySubmit">Submit</button>
             </form>
+        </div>
+    </div>
+
+    <!-- ======================================
+            End Inquiry Area
+    ====================================== -->
+    
+    <div class="feedback" style="background-color: rgb(34, 32, 32); position: relative; margin-top: 20px;">
+        <img src="images/headquater.jpg" alt="feedback">
+        <h1>FEEDBACK</h1>
+        <div class="feedbackSlider">
+            <div class="carousel carousel-fade slide" data-ride="carousel" data-pause="false;" data-interval="5000" id="">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/coll_car.jpeg" alt="coll_car" height="400px" width="500px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/coll_car.jpeg" alt="coll_car" height="400px" width="500px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/coll_car.jpeg" alt="coll_car" height="400px" width="500px">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
    </body>

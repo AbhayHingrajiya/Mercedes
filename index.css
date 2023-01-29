@@ -395,9 +395,37 @@ nav{
 .mobile_view_manufacturing h4:hover {
     background-color: rgb(60, 123, 196);
 }
-#sedans_sub, #crossovers_sub, #coupes_sub, #convertible_sub, #buses_sub, #trucks_sub, #racing_sub{
+#sedans_sub, #crossovers_sub, #coupes_sub, #convertible_sub, #buses_sub, #trucks_sub, #racing_sub, .manufacturing_front{
     display: none;
     transition: .8s ease-out;
+}
+@keyframes left_15{
+    from{left:0%}
+    to{left:15%}
+}
+@keyframes right_15{
+    from{right:0%}
+    to{right:15%}
+}
+@keyframes left_5{
+    from{left:-10%}
+    to{left:5%}
+}
+@keyframes right_5{
+    from{right:-10%}
+    to{right:5%}
+}
+@keyframes bottom_6{
+    from{bottom:-10%}
+    to{bottom:6%}
+}
+@keyframes left_37{
+    from{left:48%; right:51%;}
+    to{left:37%; right: auto;}
+}
+@keyframes left_0{
+    from{left:-100%;}
+    to{left:1%;}
 }
 @media only screen and (max-width: 1240px) {
     .manu_1240px{
@@ -422,12 +450,19 @@ nav{
     .made_h3{
         font-size: large;
     }
+    .manufacturing_front{
+        display: block;
+        height: 85% !important;
+        width: 60% !important;
+        margin-top: 15% !important;
+        margin-left: 15% !important;
+    }
     .made_h3::before{
         width: 110px;
         top: -10px;
         left: -10%;
     }
-    .mobile_view_manufacturing h4,.manufacturing_front{
+    .mobile_view_manufacturing h4{
         display: block;
     }
 }
@@ -466,8 +501,13 @@ nav{
         End Manufacturing Area
 ====================================== */
 
+/* ======================================
+        Start Inquiry Area
+====================================== */
+
 .inquiry{
     margin-top: 30px;
+    overflow: hidden;
 }
 .inquiry1{
     margin: 10px 5%;
@@ -477,6 +517,7 @@ nav{
 }
 .inquiry2{
     margin-left: 4%;
+    overflow: hidden !important;
 }
 .inquiry2 h3{
     margin-top: 20px;
@@ -522,24 +563,64 @@ nav{
     transition: .5s ease-in-out;
     position: relative;
 }
-@keyframes inquirySubmit{
-    from{width:0px; left:100px;}
-    to{width:140px; left:29px;}
-}
 .inquirySubmit:hover::before{
     content: 'Submit';
     font-weight: 700;
     color: white;
     position: absolute;
-    /* width: 140px; */
     height: 40px;
     padding-top: 8px;
     top: -.5px;
-    /* left: 29px; */
     background-color: black;
     animation: inquirySubmit .5s forwards;
     overflow: hidden;
 }
 .error{
     color: red;
+}
+@keyframes inquiry2 {
+    from{left:100%;}
+    to{left:0%;}
+}
+@keyframes inquirySubmit{
+    from{width:0px; left:100px;}
+    to{width:140px; left:29px;}
+}
+
+/* ======================================
+        End Inquiry Area
+====================================== */
+
+.feedback img{
+    width: 100%;
+    opacity: .3;
+}
+.feedback h1{
+    position: absolute;
+    color: white;
+    top: 5%;
+    left: 45%;
+}
+.feedback h1::after{
+    content: '';
+    position: absolute;
+    width: 97px;
+    height: 3px;
+    background-color: white;
+    top: 100%;
+    left: 24%;
+}
+.feedbackSlider{
+    position: absolute;
+    min-width: 60%;
+    top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.feedbackSlider .carousel-item{
+    width: 500px;
+    max-height: 500px;
+}
+.feedback p{
+    color: white;
 }
