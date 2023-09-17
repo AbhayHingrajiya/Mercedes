@@ -543,7 +543,7 @@ nav{
 .inquiry2 input:hover, .inquiry2 select:hover{
     cursor: pointer;
     border: 1px solid rgb(8, 92, 201);
-    box-shadow: 5px rgb(8, 92, 201);
+    box-shadow: 0px 0px 2px 1px rgb(8, 92, 201);
 }
 .inquiry2 h6{
     opacity: 0.6;
@@ -592,15 +592,16 @@ nav{
 ====================================== */
 
 .feedback{
-    background-color: rgb(34, 32, 32);
+    background-color: black;
     position: relative;
     margin-top: 20px;
     overflow: hidden;
+    padding-bottom: 500px;
 }
 .feedbackFront{
     width: 100%;
     min-width: 900px !important;
-    min-height: 445px !important;
+    min-height: 650px !important;
     opacity: .3;
 }
 .feedback h1{
@@ -622,7 +623,7 @@ nav{
     position: absolute;
     min-width: 85%;
     min-height: 55%;
-    top: 40%;
+    top: 200px;
     left: 5%;
     margin-left: 5%;
     margin-right: 5%;
@@ -700,6 +701,158 @@ nav{
 .mySlides:hover p::before,.mySlides:hover p::after{
     background-color: rgb(8, 92, 201);
 }
+.information{
+    position:absolute;
+    bottom: 407px;
+    width: 93%;
+}
+.address,.information_contact{
+    background-color: rgb(38, 60, 88);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    max-width: 0px;
+    padding: 8px;
+    transition: .5s ease-out;
+    overflow: hidden;
+}
+.address{
+    height: 180px;
+}
+.information_contact{
+    height: 150px;
+    margin-top: 15px;
+}
+.address:hover ,.information_contact:hover{
+    background-color: rgb(58, 89, 130);
+    box-shadow: 0px 0px 7px 5px rgb(38, 60, 88);
+}
+.information h4::after{
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 50px;
+    height: 1.5px;
+    left: 17px;
+    top: 40px;
+}
+.information p{
+    padding-left: 30px;
+    padding-top: 7px;
+}
+.information a{
+    color: white;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.information a:hover,.quickLinks a:hover{
+    text-decoration: none;
+    color: rgb(221, 148, 79);
+}
+.footer{
+    position: absolute;
+    bottom: 75px;
+    left: 150%;
+    width:100%;
+    color: white;
+    margin-left: 10% !important;
+    overflow: hidden;
+}
+.socialLinks i{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+    background-color: #2c2a2a;
+    border: .5px solid #2c2a2a;
+    border-radius: 50%;
+}
+.socialLinks li{
+    position: absolute;
+    top: 0px;
+    margin-right: 20px;
+    margin-top: 1px;
+    float: left;
+    max-width: 50px;
+    overflow: hidden;
+    transition: .5s ease-in;
+}
+.socialLinks a,.socialLinks a:hover{
+    color: white;
+}
+.linksIcon ul{
+    position: relative;
+    margin-top: 2%; 
+    padding-top: 2%; 
+    overflow: hidden;
+    max-width: 300px;
+    padding-left: 0%;
+    min-height: 51px;
+}
+.socialLinksHover{
+    background-color: rgb(21, 76, 123) !important;
+    min-height: 50px !important;
+}
+.socialLinks li:hover{
+    top: -50px;
+}
+.quickLinks{
+    position: absolute;
+}
+.quickLinks a{
+    cursor: pointer;
+    color: white;
+    margin-left: 15%;
+    transition: .5s ease-in-out;
+}
+.footer h4::after{
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 80px;
+    height: 2px;
+    top: 35px;
+    left: 20px;
+}
+.subscribe input{
+    width: 300px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 8px 0px;
+    padding: 5px 15px;
+    background-color: #2c2a2a;
+    color: white;
+    transition: .8s ease-in-out;
+}
+.subscribe input:hover{
+    border: 1px solid rgb(221, 148, 79);
+    box-shadow: 0px 0px 2px 1px rgb(221, 148, 79);
+}
+.subscribe button{
+    margin: 10px 23%;
+    height: 40px;
+    width: 130px;
+    justify-content: center;
+    background-color: #2c2a2a;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.instagram img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 2px;
+    cursor: pointer;
+}
+.instagram div{
+    max-width: 250px !important;
+}
+.instagram img:hover{
+    border: 2px solid rgb(221, 148, 79);
+}
 @keyframes slideActive{
     from{left:110%;}
     to{left:55%}
@@ -716,12 +869,60 @@ nav{
     from{left:-50%}
     to{left:110%}
 }
-@media only screen and (max-width:1000px){
+@keyframes address {
+    from{max-width: 0px;}
+    to{max-width: 360px !important;}
+}
+@keyframes information_contact {
+    from{max-width: 0px;}
+    to{max-width: 360px !important;}
+}
+@keyframes footer {
+    from{left: 150%;}
+    to{left: 0%;}
+}
+@media only screen and (max-width:1230px){
+    .subscribe input{
+        width: 250px;
+    }
+}
+@media only screen and (max-width:1111px){
+    .feedback{
+        padding-bottom: 900px;
+    }
     .feedback h1{
-        top: 5%;
+        top: 3%;
     }
     .feedbackSlider{
-        top: 20%;
+        top: 5%;
+    }
+    .information{
+        width:100%;
+        top: 408px;
+        bottom: auto;
+    }
+    .information div{
+        margin: 3px;
+        min-width: 70% !important;
+    }
+    .information_contact{
+        height: 130px;
+        margin-left: -15%;
+    }
+    .address{
+        margin-left: 60;
+    }
+    .footer div{
+        min-width: 47%;
+        margin-top: 30px;
+    }
+    @keyframes information_contact{
+        from{margin-left: -15%;}
+        to{margin-left: 15%;}
+    }
+    @keyframes address{
+        from{margin-left: 60%;}
+        to{margin-left: 15%;}
     }
 }
 @media only screen and (max-width:900px) {
@@ -744,6 +945,17 @@ nav{
 @media only screen and (max-width:720px){
     .feedback h1{
         left: 40%;
+    }
+}
+@media only screen and (max-width:575.50px){
+    .feedback{
+        padding-bottom: 1400px;
+    }
+    .footer div{
+        max-width: 95%;
+    }
+    .subscribe input{
+        width: 80%;
     }
 }
 @media only screen and (max-width:500px){

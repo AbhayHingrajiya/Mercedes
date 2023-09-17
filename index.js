@@ -134,6 +134,24 @@ $(document).ready(function(){
         });
     },{offset :"100%"
     });
+    $('.information_contact').waypoint(function(){
+        $('.information_contact').css({
+            animation: "information_contact 3s forwards"
+        });
+    },{offset :"100%"
+    });
+    $('.address').waypoint(function(){
+        $('.address').css({
+            animation: "address 3s forwards"
+        });
+    },{offset :"100%"
+    });
+    $('.footer').waypoint(function(){
+        $('.footer').css({
+            animation: "footer 3s forwards"
+        });
+    },{offset :"100%"
+    });
 
     /* ======================================
             End Animation Area
@@ -166,22 +184,34 @@ $(document).ready(function(){
             }
         },
         submitHandler : function(){
-            // Email.send({
-			// 	Host: "",
-			// 	Port: ,
-			// 	Username: "",
-			// 	Password: "",
-			// 	To: "",
-			// 	From: "",
-			// 	Subject: "",
-			// 	Body: ""
-            // });
+            var inq_email=document.getElementById("email").value;
+            var work_for=document.getElementById("selectInput").value;
+            var client_name=document.getElementById("name").value;
+            Email.send({
+				Host: "smtp.elasticemail.com",
+				Port: 2525,
+				Username: "abhayhingrajiya18@gmail.com",
+				Password: "6A26DD6FFFD80DAE8311945FBD911AA3F0FE",
+				To: inq_email,
+				From: "abhayhingrajiya18@gmail.com",
+				Subject: "From Mercedes",
+				Body: "We will contact you vary soon "+client_name
+            });
+            Email.send({
+				Host: "smtp.elasticemail.com",
+				Port: 2525,
+				Username: "abhayhingrajiya18@gmail.com",
+				Password: "6A26DD6FFFD80DAE8311945FBD911AA3F0FE",
+				To: "abhayhingrajiya18@gmail.com",
+				From: "abhayhingrajiya18@gmail.com",
+				Subject: work_for,
+				Body: client_name+" want to discuss about "+work_for+" contact him by "+inq_email
+            });
             alert('We have Your Details');
             alert('We will contact you very soon');
         }
     });
     let slideIndex=0;
-    showSlide();
     function showSlide(){
         let slides=document.getElementsByClassName("mySlides");
         if(slideIndex != 0){
@@ -211,4 +241,22 @@ $(document).ready(function(){
         slides[slideIndex-1].style.animation="slideActive 2s forwards";
         setTimeout(showSlide,10000);
     }
+    showSlide();
 });
+function subscribeButton(){
+    var input=document.getElementById("subscribeEmail").value;
+    if(input!=""){
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Port: 2525,
+            Username: "abhayhingrajiya18@gmail.com",
+            Password: "6A26DD6FFFD80DAE8311945FBD911AA3F0FE",
+            To: "abhayhingrajiya18@gmail.com",
+            From: "abhayhingrajiya18@gmail.com",
+            Subject: "For Subscription",
+            Body: "New Subscription is arrived, His Email address is: "+input
+        });
+    }else{
+        alert("Enter Your Email address")
+    }
+}
